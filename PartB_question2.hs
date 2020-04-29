@@ -1,4 +1,5 @@
-module partB-question2 where
+module PartB_question2 where
+
 delete::Int -> [ Int ] ->[ Int ]
 delete c [] =[]
 delete n (x:xs)= if n==x

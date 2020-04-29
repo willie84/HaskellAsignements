@@ -6,11 +6,10 @@ safetail (x:xs)=if (null (x:xs)) then [] else xs
 
 --guarded equation
 
-safetail (x:xs) | null (x:xs) = []
-                | otherwise = xs
+safetail xs | null xs = []
+            | otherwise = tail xs
 
 --pattern matching
 
-safetail []=[]
-
-safetail xs= tail xs
+safeTail [] = Nothing
+safeTail (x:xs) = Just xs
